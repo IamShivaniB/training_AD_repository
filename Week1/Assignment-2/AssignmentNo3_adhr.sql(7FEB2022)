@@ -1,0 +1,10 @@
+--Merge Statament
+CREATE TABLE members (
+    member_id NUMBER PRIMARY KEY,
+    first_name VARCHAR2(50) NOT NULL,
+    last_name VARCHAR2(50) NOT NULL,
+    rank VARCHAR2(20)
+);
+
+CREATE TABLE member_staging AS 
+SELECT * FROM members;
